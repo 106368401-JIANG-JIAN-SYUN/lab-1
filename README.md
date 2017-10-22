@@ -1,8 +1,4 @@
-    import pandas as pd  
-    import numpy as np  
-    import tensorflow as tf  
-    import matplotlib.pyplot as plt  
-    from sklearn.metrics import mean_absolute_error  
+
 
   
  讀取資料:
@@ -37,8 +33,7 @@
     X_train,X_valid,X_test=normalize(X_train,X_valid,X_test)  
 
 
-    from keras.models import Sequential
-    from keras.layers import Dense
+
 
 
 
@@ -65,11 +60,7 @@
 
 
 
-    n=len(Y_predict)+1  
-    for i in range(1,n):  
-      b= np.arange(1,n,1)   
-    b=np.transpose([b])  
-    Y=np.column_stack((b,Y_predict))  
+   
 
 
 結果觀察:
@@ -90,4 +81,4 @@
     print (MAE_valid)  
 
 
-    np.savetxt('106368401_test.csv',Y,delimiter=',',fmt='%i')  
+
